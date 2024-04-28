@@ -40,7 +40,8 @@ const config = {
 				background: 'url("/img/background.svg")'
 			},
 			boxShadow: {
-				card: '0 20px 30px -5px rgba(127, 137, 185, 0.15)'
+				card: '0 20px 30px -5px rgba(127, 137, 185, 0.15)',
+				'slider-thumb': '0 15px 30px hsla(174, 86%, 50%, 0.6)'
 			},
 			keyframes: {
 				'accordion-down': {
