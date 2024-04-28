@@ -39,6 +39,9 @@ const config = {
 				circles: 'url("/img/circles.svg")',
 				background: 'url("/img/background.svg")'
 			},
+			boxShadow: {
+				card: '0 20px 30px -5px rgba(127, 137, 185, 0.15)'
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },
