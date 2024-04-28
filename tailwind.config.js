@@ -10,7 +10,7 @@ const config = {
 	prefix: '',
 	theme: {
 		fontFamily: {
-			sans: [...defaultConfig.theme.fontFamily.sans]
+			sans: ['"Manrope Variable"', ...defaultConfig.theme.fontFamily.sans]
 		},
 		container: {
 			center: true,
