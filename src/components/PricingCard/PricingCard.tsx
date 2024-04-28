@@ -4,6 +4,7 @@ import type { ReactElement } from 'react'
 import PricingCardPageViews from './PricingCardPageViews'
 import PricingCardPrice from './PricingCardPrice'
 import PriceCardSlider from './PricingCardSlider'
+import PricingCardSwitch from './PricingCardSwitch'
 
 export default function PricingCard(): ReactElement {
 	return (
@@ -15,6 +16,7 @@ export default function PricingCard(): ReactElement {
 					<PricingCardPrice className='mt-[30px] sm:mt-0' />
 				</div>
 				<PriceCardSlider className='mt-2 hidden sm:block' />
+				<PricingCardSwitch className='-mr-[13px] mt-[22px] sm:mr-[17px] sm:mt-10' />
 			</CardContent>
 			<Divider />
 		</Card>
