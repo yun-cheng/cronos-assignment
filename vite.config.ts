@@ -41,7 +41,8 @@ export default defineConfig(({ mode }) => ({
 							'robots.txt',
 							'apple-touch-icon.png',
 							'icons/*.svg',
-							'fonts/*.woff2'
+							'fonts/*.woff2',
+							'img/*.svg'
 						],
 						manifest: {
 							theme_color: '#BD34FE',

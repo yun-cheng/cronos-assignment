@@ -20,6 +20,10 @@ const config = {
 			}
 		},
 		extend: {
+			backgroundImage: {
+				circles: 'url("img/circles.svg")',
+				background: 'url("img/background.svg")'
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },
