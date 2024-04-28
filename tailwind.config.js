@@ -36,8 +36,8 @@ const config = {
 				divider: '#EEF1FA'
 			},
 			backgroundImage: {
-				circles: 'url("img/circles.svg")',
-				background: 'url("img/background.svg")'
+				circles: 'url("/img/circles.svg")',
+				background: 'url("/img/background.svg")'
 			},
 			keyframes: {
 				'accordion-down': {
