@@ -21,6 +21,8 @@ jobs:
           node-version: 20
           cache: 'pnpm'
       - run: pnpm install && pnpm build
+        env:
+          VITE_COINGECKO_API_KEY: '${{ secrets.VITE_COINGECKO_API_KEY }}'
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'

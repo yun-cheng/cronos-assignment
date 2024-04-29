@@ -1,3 +1,5 @@
+import { useQuery } from '@tanstack/react-query'
+import fetchCroPrice from 'api/fetchCroPrice'
 import { priceAtom } from 'atoms/pricing'
 import { useAtomValue } from 'jotai'
 import type { HTMLAttributes } from 'react'
@@ -9,6 +11,14 @@ const PricingCardPrice = forwardRef<
 	HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => {
 	const price = useAtomValue(priceAtom)
+
+	const { data: croToUsd } = useQuery({
+		queryKey: ['fetchCroPrice'],
+		queryFn: fetchCroPrice,
+		staleTime: 60_000
+	})
+
+	const croPrice = croToUsd ? Math.round(price / croToUsd).toString() : ''
 
 	return (
 		<div ref={ref} className={className} {...props}>
@@ -36,7 +46,7 @@ const PricingCardPrice = forwardRef<
 					'whitespace-pre-wrap text-[10px] tracking-[.2px] sm:text-[14px] sm:-tracking-[.4px]'
 				)}
 			>
-				{`or ~32 CRO `}
+				{`or ~${croPrice} CRO `}
 				<span className='-translate-x-px sm:translate-x-0'>/ month</span>
 			</div>
 		</div>
