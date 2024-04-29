@@ -9,7 +9,7 @@ import './index.css'
 
 registerSW()
 
-const MAX_RETRIES = 1
+const MAX_RETRIES = 5
 const queryClient = new QueryClient({
 	defaultOptions: {
 		queries: {
