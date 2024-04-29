@@ -1,22 +1,32 @@
-# Vitamin
+# Cronos Assignment
 
-Opinionated Vite starter template.
+A showcase website demonstrating front-end development skills for Cronos' assignment.
 
-## Before you start coding
+Visit live site: <https://cronos-assignment.web.app/>
 
-- [ ] If you don't plan to use `react-query`, remove the query client logic in the `main.tsx` file.
-- [ ] Change the title, description and theme color in the `index.html` and `vite.config.ts`.
-- [ ] Change the `name` field in package.json.
+## Assignment
 
-## Scripts
+This project follows [these instructions](https://cronos-hq.notion.site/Front-End-Take-home-assignment-1-Responsive-Price-Calculator-9a6ec1a38f5c401c9088f14c0754f251) and is built according to the [design image files](design/).
 
-- `pnpm dev` - start a development server with hot reload.
-- `pnpm build` - build for production. The generated files will be on the `dist` folder.
-- `pnpm preview` - locally preview the production build.
-- `pnpm test` - run unit and integration tests related to changed files based on git.
-- `pnpm test:ci` - run all unit and integration tests in CI mode.
-- `pnpm test:e2e` - run all e2e tests with the Cypress Test Runner.
-- `pnpm test:e2e:headless` - run all e2e tests headlessly.
-- `pnpm format` - format all files with Prettier.
-- `pnpm lint` - runs TypeScript, ESLint and Stylelint.
-- `pnpm validate` - runs `lint`, `test:ci` and `test:e2e:ci`.
+## Tech Stack
+
+- Build with [React](https://react.dev/) and [TypeScript](https://www.typescriptlang.org/).
+- Adopt the [Vitamin](https://github.com/wtchnm/Vitamin) template, which utilizes [Vite](https://vitejs.dev/) as a build tool and incorporates best practices for React projects.
+- Ensure code consistency and formatting with [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/), and integrate them into the workflow via [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged).
+- Utilize [TanStack Query](https://tanstack.com/query) for efficient data fetching, caching, and synchronization.
+- Style using the atomic approach with [Tailwind CSS](https://tailwindcss.com/), alongside [clsx](https://github.com/lukeed/clsx) and [tailwind-merge](https://github.com/dcastil/tailwind-merge), to prevent style conflicts and enhance readability.
+- Leverage [shadcn/ui](https://ui.shadcn.com/) for ready-to-use components.
+- Automate deployment to [Firebase Hosting](https://firebase.google.com/docs/hosting) through [GitHub Actions](https://docs.github.com/en/actions) for continuous integration.
+- Adopt an atomic approach to state management with [Jotai](https://jotai.org/).
+- Implement self-hosted fonts using [Fontsource](https://fontsource.org/).
+
+## Screenshots
+
+![mobile](screenshots/mobile.png)
+![desktop](screenshots/desktop.png)
+![desktop-1](screenshots/desktop-1.png)
+
+## TODO
+
+- Error handling
+- Testing
