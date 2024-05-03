@@ -29,4 +29,3 @@ This project follows [these instructions](https://cronos-hq.notion.site/Front-En
 ## TODO
 
 - Error handling
-- Testing

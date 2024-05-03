@@ -4,6 +4,12 @@ import server from 'mocks/server'
 import { DESKTOP_RESOLUTION_HEIGHT, DESKTOP_RESOLUTION_WIDTH } from 'testUtils'
 import 'whatwg-fetch'
 
+global.ResizeObserver = vi.fn().mockImplementation(() => ({
+	observe: vi.fn(),
+	unobserve: vi.fn(),
+	disconnect: vi.fn()
+}))
+
 beforeAll(() => {
 	server.listen({ onUnhandledRequest: 'error' })
 
